@@ -1,0 +1,56 @@
+piloto,numero,equipo,sesion,vuelta,tiempo,sector1,sector2,sector3,neumaticos
+Verstappen,1,Red Bull Racing,Q1,1,1:12.386,19.842,38.124,14.420,Blando
+Verstappen,1,Red Bull Racing,Q3,1,1:11.908,19.654,37.891,14.363,Blando
+Verstappen,1,Red Bull Racing,Q3,2,1:11.365,19.598,37.712,14.055,Blando
+Alonso,14,Aston Martin,Q1,1,1:12.886,19.921,38.312,14.653,Blando
+Alonso,14,Aston Martin,Q3,1,1:11.862,19.571,37.698,14.593,Blando
+Alonso,14,Aston Martin,Q3,2,1:11.449,19.523,37.621,14.305,Blando
+Leclerc,16,Ferrari,Q1,1,1:12.912,19.934,38.298,14.680,Blando
+Leclerc,16,Ferrari,Q3,1,1:11.803,19.541,37.681,14.581,Blando
+Leclerc,16,Ferrari,Q3,2,1:11.471,19.511,37.658,14.302,Blando
+Ocon,31,Alpine,Q1,1,1:12.967,19.988,38.341,14.638,Blando
+Ocon,31,Alpine,Q3,1,1:12.101,19.742,37.994,14.365,Blando
+Ocon,31,Alpine,Q3,2,1:11.553,19.634,37.631,14.288,Blando
+Sainz,55,Ferrari,Q1,1,1:12.717,19.871,38.198,14.648,Blando
+Sainz,55,Ferrari,Q3,1,1:11.987,19.712,37.889,14.386,Blando
+Sainz,55,Ferrari,Q3,2,1:11.630,19.668,37.694,14.268,Blando
+Hamilton,44,Mercedes,Q1,1,1:12.872,19.912,38.287,14.673,Blando
+Hamilton,44,Mercedes,Q3,1,1:12.134,19.789,38.012,14.333,Blando
+Hamilton,44,Mercedes,Q3,2,1:11.725,19.721,37.731,14.273,Blando
+Gasly,10,Alpine,Q1,1,1:13.033,20.012,38.398,14.623,Blando
+Gasly,10,Alpine,Q3,1,1:12.287,19.834,38.098,14.355,Blando
+Gasly,10,Alpine,Q3,2,1:11.933,19.754,37.882,14.297,Blando
+Russell,63,Mercedes,Q1,1,1:12.769,19.891,38.236,14.642,Blando
+Russell,63,Mercedes,Q3,1,1:12.198,19.812,38.037,14.349,Blando
+Russell,63,Mercedes,Q3,2,1:11.964,19.763,37.901,14.300,Blando
+Tsunoda,22,AlphaTauri,Q1,1,1:12.642,19.854,38.178,14.610,Blando
+Tsunoda,22,AlphaTauri,Q3,1,1:12.344,19.879,38.124,14.341,Blando
+Tsunoda,22,AlphaTauri,Q3,2,1:12.082,19.823,37.956,14.303,Blando
+Norris,4,McLaren,Q1,1,1:12.877,19.917,38.293,14.667,Blando
+Norris,4,McLaren,Q3,1,1:12.498,19.934,38.211,14.353,Blando
+Norris,4,McLaren,Q3,2,1:12.254,19.878,38.071,14.305,Blando
+Piastri,81,McLaren,Q1,1,1:13.006,20.001,38.372,14.633,Blando
+Piastri,81,McLaren,Q2,1,1:12.734,19.923,38.256,14.555,Blando
+Piastri,81,McLaren,Q2,2,1:12.395,19.867,38.091,14.437,Blando
+DeVries,21,AlphaTauri,Q1,1,1:13.054,20.023,38.411,14.620,Blando
+DeVries,21,AlphaTauri,Q2,1,1:12.801,19.978,38.312,14.511,Blando
+DeVries,21,AlphaTauri,Q2,2,1:12.428,19.891,38.112,14.425,Blando
+Albon,23,Williams,Q1,1,1:12.706,19.868,38.209,14.629,Blando
+Albon,23,Williams,Q2,1,1:12.889,19.998,38.378,14.513,Blando
+Albon,23,Williams,Q2,2,1:12.527,19.934,38.198,14.395,Blando
+Stroll,18,Aston Martin,Q1,1,1:12.722,19.873,38.213,14.636,Blando
+Stroll,18,Aston Martin,Q2,1,1:12.934,20.012,38.398,14.524,Blando
+Stroll,18,Aston Martin,Q2,2,1:12.623,19.956,38.248,14.419,Blando
+Bottas,77,Alfa Romeo,Q1,1,1:13.038,20.015,38.402,14.621,Blando
+Bottas,77,Alfa Romeo,Q2,1,1:12.967,20.023,38.421,14.523,Blando
+Bottas,77,Alfa Romeo,Q2,2,1:12.625,19.962,38.251,14.412,Blando
+Sargeant,2,Williams,Q1,1,1:13.113,20.034,38.453,14.626,Blando
+Sargeant,2,Williams,Q1,2,1:13.022,20.011,38.411,14.600,Blando
+Magnussen,20,Haas,Q1,1,1:13.270,20.089,38.534,14.647,Blando
+Magnussen,20,Haas,Q1,2,1:13.184,20.067,38.498,14.619,Blando
+Hulkenberg,27,Haas,Q1,1,1:13.279,20.098,38.548,14.633,Blando
+Hulkenberg,27,Haas,Q1,2,1:13.201,20.078,38.512,14.611,Blando
+Zhou,24,Alfa Romeo,Q1,1,1:13.523,20.134,38.712,14.677,Blando
+Zhou,24,Alfa Romeo,Q1,2,1:13.445,20.112,38.678,14.655,Blando
+Perez,11,Red Bull Racing,Q1,1,1:13.850,20.212,38.891,14.747,Blando
+Perez,11,Red Bull Racing,Q1,2,1:13.778,20.189,38.867,14.722,Blando

@@ -1,45 +1,86 @@
-# 🏎️ Analizador de Vueltas - Motorsport Telemetry Tool (Versión Básica)
+# 🏎️ Analizador de Vueltas — Motorsport Telemetry Tool
 
-Este es un **programa de análisis de telemetría básica para carreras**, inspirado en herramientas reales de motorsport.  
-Permite cargar datos de una sesión de entrenamientos o carrera desde archivos CSV y analizar de forma sencilla y visual el rendimiento de pilotos y coches.  
+Herramienta de análisis de telemetría básica para sesiones de carreras.  
+Carga datos de clasificación desde archivos CSV y analiza el rendimiento de pilotos.
+
+> **Sesión de ejemplo incluida**: Clasificación del GP de Mónaco 2023 — Fórmula 1
 
 ---
 
 ## 📊 Funcionalidades
 
 ### 🔹 Entrada de datos
-- Lee archivos **CSV** con información detallada de cada vuelta.
-- Permite seleccionar fácilmente qué archivo analizar.
+- Lee archivos **CSV** con datos detallados de cada vuelta
+- Detecta automáticamente los CSV de la misma carpeta
 
 ### 🔹 Análisis
-- Calcula la **vuelta más rápida** de la sesión.
-- Indica **qué piloto** logró esa vuelta y **qué neumáticos** usó.
-- Genera estadísticas **por piloto**:
-  - Mejor vuelta
-  - Promedio de tiempos
-- Calcula **vuelta ideal** (suma de los mejores sectores).
+- ⚡ **Vuelta más rápida** de la sesión: tiempo, piloto, equipo y neumáticos
+- 📊 **Estadísticas por piloto**: mejor vuelta y tiempo promedio
+- 🔮 **Vuelta ideal**: suma de los mejores sectores individuales de toda la sesión
+- ⏱️ **Diferencias respecto a la pole**: gap de cada piloto
 
-### 🔹 Visualización
-- **Gráfico de evolución de tiempos** vuelta a vuelta.
-- Representación clara de las **tendencias de cada piloto**.
-- Posibilidad de comparar sectores y analizar rendimiento.
+### 🔹 Sesiones
+- Filtra el análisis por **Q1, Q2, Q3** o analiza todo de golpe
 
 ---
 
-## 🗂️ Ejemplo de CSV
+## 🗂️ Formato del CSV
 
-El archivo CSV debe contener estas columnas:
+```csv
+piloto,numero,equipo,sesion,vuelta,tiempo,sector1,sector2,sector3,neumaticos
+Verstappen,1,Red Bull Racing,Q3,2,1:11.365,19.598,37.712,14.055,Blando
+Alonso,14,Aston Martin,Q3,2,1:11.449,19.523,37.621,14.305,Blando
+```
 
-| Vuelta | Tiempo | Sector1 | Sector2 | Sector3 | Piloto | TipoNeumatico | TempPista |
-|--------|--------|---------|---------|---------|--------|--------------|-----------|
-| 1 | 95.3 | 31.2 | 30.5 | 33.6 | Alonso | Blando | 32.5 |
-| 2 | 94.7 | 30.9 | 30.2 | 33.6 | Alonso | Blando | 32.7 |
-| 3 | 96.1 | 31.4 | 30.8 | 33.9 | Hamilton | Medio | 33.1 |
+| Columna     | Descripción                            |
+|-------------|----------------------------------------|
+| `piloto`    | Apellido del piloto                    |
+| `numero`    | Número de coche                        |
+| `equipo`    | Nombre del equipo                      |
+| `sesion`    | Q1 / Q2 / Q3                          |
+| `vuelta`    | Número de vuelta en esa sesión         |
+| `tiempo`    | Tiempo total en formato `m:ss.mmm`     |
+| `sector1`   | Tiempo sector 1 en segundos            |
+| `sector2`   | Tiempo sector 2 en segundos            |
+| `sector3`   | Tiempo sector 3 en segundos            |
+| `neumaticos`| Compuesto usado (Blando/Medio/Duro)    |
 
 ---
 
-## 🚀 Cómo usar
+## 🚀 Uso
 
-1. Clonar el repositorio:
 ```bash
-git clone https://github.com/TU-USUARIO/AnalizadorVueltas.git
+python analizador.py
+```
+
+No requiere ninguna librería externa, solo Python 3.
+
+---
+
+## 📁 Estructura del proyecto
+
+```
+AnalizadorVueltas/
+├── analizador.py          # Script principal
+├── monaco_2023_qualy.csv  # Datos reales GP Mónaco 2023 - Clasificación
+└── README.md
+```
+
+---
+
+## 🏁 Resultado de la Clasificación — GP Mónaco 2023
+
+| Pos | Piloto      | Equipo            | Q3          |
+|-----|-------------|-------------------|-------------|
+| 1   | Verstappen  | Red Bull Racing   | 1:11.365 🏆 |
+| 2   | Alonso      | Aston Martin      | 1:11.449   |
+| 3   | Leclerc     | Ferrari           | 1:11.471   |
+| 4   | Ocon        | Alpine            | 1:11.553   |
+| 5   | Sainz       | Ferrari           | 1:11.630   |
+| 6   | Hamilton    | Mercedes          | 1:11.725   |
+| 7   | Gasly       | Alpine            | 1:11.933   |
+| 8   | Russell     | Mercedes          | 1:11.964   |
+| 9   | Tsunoda     | AlphaTauri        | 1:12.082   |
+| 10  | Norris      | McLaren           | 1:12.254   |
+
+> Nota: Leclerc recibió una penalización de 3 posiciones en parrilla por obstruir a Norris en Q3.
